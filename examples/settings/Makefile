@@ -54,9 +54,10 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -std=gnu++11
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:=	-lswitchui -lsdl2 -lsdl2_gfx -lsdl2_ttf -lsdl2_image \
-		-ljpeg -lpng -lfreetype -lbz2 -lz -lm \
-		-lnx
+LIBS    := -lswitchui -lSDL2_gfx -lSDL2_ttf -lSDL2_image -lSDL2 \
+        -lpng -lz -ljpeg \
+        -lglapi -ldrm_nouveau -lstdc++ \
+        -lnx -lm -lfreetype -lbz2
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
