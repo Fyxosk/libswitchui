@@ -38,7 +38,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -std=gnu++11
 
 ASFLAGS	:=	-g $(ARCH)
 
-LIBS	:=	-lsdl2 -lsdl2_gfx -lsdl2_ttf -lsdl2_image \
+LIBS	:=	-lSDL2 -lSDL2_gfx -lSDL2_ttf -lSDL2_image \
 		-ljpeg -lpng -lfreetype -lbz2 -lz -lm \
 		-lnx
 
